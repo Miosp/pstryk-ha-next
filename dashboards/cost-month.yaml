@@ -1,0 +1,33 @@
+type: custom:apexcharts-card
+header:
+  title: Pstryk — koszt miesiąca (PLN brutto)
+  show: true
+  show_states: true
+  colorize_states: true
+graph_span: 1month
+span:
+  start: month
+series:
+  - entity: sensor.pstryk_cost_month
+    type: column
+    name: Koszt dnia
+    unit: PLN
+    data_generator: |
+      return attributes.daily.map(d => [new Date(d.start + "T00:00:00").getTime(), d.cost]);
+  - entity: sensor.pstryk_cost_month
+    type: line
+    name: Prognoza miesiąca
+    unit: PLN
+    extend_to: end
+    data_generator: |
+      const now = new Date().getTime();
+      const endOfMonth = new Date(); endOfMonth.setMonth(endOfMonth.getMonth() + 1, 0);
+      endOfMonth.setHours(23, 59, 59, 999);
+      return [[now, state], [endOfMonth.getTime(), attributes.forecast]];
+apex_config:
+  chart:
+    height: 300
+  xaxis:
+    type: datetime
+    labels:
+      datetimeUTC: false

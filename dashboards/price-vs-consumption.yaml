@@ -1,0 +1,34 @@
+type: custom:apexcharts-card
+header:
+  title: Pstryk — cena vs zużycie (dziś)
+  show: true
+graph_span: 24h
+span:
+  end: day
+series:
+  - entity: sensor.pstryk_consumption_today
+    type: column
+    name: Zużycie kWh
+    unit: kWh
+    data_generator: |
+      return attributes.hourly.map(h => [new Date(h.start).getTime(), h.kwh]);
+  - entity: sensor.pstryk_current_price
+    type: line
+    name: Cena PLN/kWh
+    curve: stepline
+    data_generator: |
+      return attributes.today_prices
+        .filter(p => p.gross !== null)
+        .map(p => [new Date(p.start).getTime(), p.gross]);
+apex_config:
+  chart:
+    height: 300
+  yaxis:
+    - seriesName: Zużycie kWh
+    - seriesName: Cena PLN/kWh
+      opposite: true
+      decimalsInFloat: 2
+  xaxis:
+    type: datetime
+    labels:
+      datetimeUTC: false

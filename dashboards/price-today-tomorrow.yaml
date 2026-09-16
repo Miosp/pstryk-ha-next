@@ -1,0 +1,32 @@
+type: custom:apexcharts-card
+header:
+  title: Pstryk — ceny 48h (PLN/kWh brutto)
+  show: true
+  show_states: true
+  colorize_states: true
+graph_span: 48h
+span:
+  end: day
+  offset: 24h
+series:
+  - entity: sensor.pstryk_current_price
+    type: column
+    name: Cena
+    unit: PLN/kWh
+    data_generator: |
+      return attributes.today_prices.concat(attributes.tomorrow_prices)
+        .filter(p => p.gross !== null)
+        .map(p => [new Date(p.start).getTime(), p.gross]);
+apex_config:
+  chart:
+    height: 300
+  plotOptions:
+    bar:
+      columnWidth: 60%
+  xaxis:
+    type: datetime
+    labels:
+      datetimeUTC: false
+  tooltip:
+    x:
+      format: d MMM HH:mm
