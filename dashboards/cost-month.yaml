@@ -5,11 +5,18 @@ header:
 graph_span: 1month
 span:
   start: month
+yaxis:
+  - id: dzien
+    decimals: 1
+  - id: narastajaco
+    decimals: 0
+    opposite: true
 series:
   - entity: sensor.pstryk_cost_month
     type: column
     name: Koszt dnia
     unit: PLN
+    yaxis_id: dzien
     tap_action:
       action: more-info
     data_generator: |
@@ -19,6 +26,7 @@ series:
     type: line
     name: Narastająco (z prognozą)
     unit: PLN
+    yaxis_id: narastajaco
     in_header: false
     curve: straight
     data_generator: |
@@ -39,12 +47,6 @@ series:
 apex_config:
   chart:
     height: 300
-  yaxis:
-    - seriesName: Koszt dnia
-      decimalsInFloat: 1
-    - seriesName: Narastająco (z prognozą)
-      opposite: true
-      decimalsInFloat: 0
   xaxis:
     type: datetime
     labels:

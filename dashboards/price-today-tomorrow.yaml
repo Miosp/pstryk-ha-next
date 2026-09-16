@@ -12,6 +12,8 @@ now:
   show: true
   label: Teraz
   color: "#ff9800"
+yaxis:
+  - decimals: 2
 series:
   - entity: sensor.pstryk_current_price
     type: column
@@ -32,8 +34,6 @@ apex_config:
   plotOptions:
     bar:
       columnWidth: 60%
-  yaxis:
-    - decimalsInFloat: 2
   xaxis:
     type: datetime
     labels:

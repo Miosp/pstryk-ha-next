@@ -7,11 +7,20 @@ header:
 graph_span: 24h
 span:
   end: day
+yaxis:
+  - id: kwh
+    decimals: 2
+  - id: cena
+    decimals: 2
+    opposite: true
+  - id: koszt
+    decimals: 1
 series:
   - entity: sensor.pstryk_consumption_today
     type: column
     name: Zużycie kWh
     unit: kWh
+    yaxis_id: kwh
     tap_action:
       action: more-info
     data_generator: |
@@ -20,6 +29,7 @@ series:
   - entity: sensor.pstryk_current_price
     type: line
     name: Cena PLN/kWh
+    yaxis_id: cena
     in_header: before_now
     curve: stepline
     data_generator: |
@@ -31,6 +41,7 @@ series:
     type: line
     name: Koszt narastająco
     unit: PLN
+    yaxis_id: koszt
     in_header: false
     curve: straight
     stroke_width: 2
@@ -44,14 +55,6 @@ series:
 apex_config:
   chart:
     height: 300
-  yaxis:
-    - seriesName: Zużycie kWh
-      decimalsInFloat: 2
-    - seriesName: Cena PLN/kWh
-      opposite: true
-      decimalsInFloat: 2
-    - seriesName: Koszt narastająco
-      decimalsInFloat: 1
   xaxis:
     type: datetime
     labels:
