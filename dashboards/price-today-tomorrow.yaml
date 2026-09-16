@@ -39,3 +39,8 @@ apex_config:
   tooltip:
     x:
       format: d MMM HH:mm
+    y:
+      formatter: |
+        EVAL:function(value) {
+          return value.toFixed(2);
+        }

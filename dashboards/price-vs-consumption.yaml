@@ -57,6 +57,12 @@ series:
 apex_config:
   chart:
     height: 300
+  tooltip:
+    y:
+      formatter: |
+        EVAL:function(value) {
+          return value.toFixed(2);
+        }
   xaxis:
     type: datetime
     labels:
