@@ -17,6 +17,8 @@ series:
     name: Koszt dnia
     unit: PLN
     yaxis_id: dzien
+    tap_action:
+      action: more-info
     data_generator: |
       const daily = entity.attributes.daily || [];
       return daily.map(d => [new Date(d.start + "T00:00:00").getTime(), d.cost]);
