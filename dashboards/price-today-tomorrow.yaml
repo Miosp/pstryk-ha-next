@@ -2,6 +2,8 @@ type: custom:apexcharts-card
 header:
   title: Pstryk — ceny 48h (PLN/kWh brutto)
   show: true
+  show_states: true
+  colorize_states: true
 graph_span: 48h
 span:
   end: day
@@ -9,12 +11,16 @@ span:
 now:
   show: true
   label: Teraz
+  color: "#ff9800"
 series:
   - entity: sensor.pstryk_current_price
     type: column
     name: Cena
+    in_header: before_now
     show:
       legend_value: false
+    tap_action:
+      action: more-info
     data_generator: |
       const attrs = entity.attributes;
       const all = (attrs.today_prices || []).concat(attrs.tomorrow_prices || [])

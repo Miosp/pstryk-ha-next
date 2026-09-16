@@ -2,8 +2,6 @@ type: custom:apexcharts-card
 header:
   title: Pstryk — koszt miesiąca (PLN brutto)
   show: true
-  show_states: true
-  colorize_states: true
 graph_span: 1month
 span:
   start: month
@@ -12,6 +10,8 @@ series:
     type: column
     name: Koszt dnia
     unit: PLN
+    tap_action:
+      action: more-info
     data_generator: |
       const daily = entity.attributes.daily || [];
       return daily.map(d => [new Date(d.start + "T00:00:00").getTime(), d.cost]);
@@ -19,6 +19,7 @@ series:
     type: line
     name: Narastająco (z prognozą)
     unit: PLN
+    in_header: false
     curve: straight
     data_generator: |
       const daily = entity.attributes.daily || [];

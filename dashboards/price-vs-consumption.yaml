@@ -12,12 +12,15 @@ series:
     type: column
     name: Zużycie kWh
     unit: kWh
+    tap_action:
+      action: more-info
     data_generator: |
       const hourly = entity.attributes.hourly || [];
       return hourly.map(h => [new Date(h.start).getTime(), h.kwh]);
   - entity: sensor.pstryk_current_price
     type: line
     name: Cena PLN/kWh
+    in_header: before_now
     curve: stepline
     data_generator: |
       const today = entity.attributes.today_prices || [];
@@ -28,6 +31,7 @@ series:
     type: line
     name: Koszt narastająco
     unit: PLN
+    in_header: false
     curve: straight
     stroke_width: 2
     data_generator: |
