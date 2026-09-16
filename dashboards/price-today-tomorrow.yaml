@@ -18,6 +18,7 @@ series:
   - entity: sensor.pstryk_current_price
     type: column
     name: Cena
+    float_precision: 2
     show:
       legend_value: false
       in_header: raw

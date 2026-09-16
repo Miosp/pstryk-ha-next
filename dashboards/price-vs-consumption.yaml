@@ -19,6 +19,7 @@ series:
   - entity: sensor.pstryk_consumption_today
     type: column
     name: Zużycie kWh
+    float_precision: 2
     unit: kWh
     yaxis_id: kwh
     show:
@@ -29,6 +30,7 @@ series:
   - entity: sensor.pstryk_current_price
     type: line
     name: Cena PLN/kWh
+    float_precision: 2
     yaxis_id: cena
     show:
       in_header: raw
@@ -41,6 +43,7 @@ series:
   - entity: sensor.pstryk_consumption_today
     type: line
     name: Koszt narastająco
+    float_precision: 1
     unit: PLN
     yaxis_id: koszt
     show:
@@ -50,10 +53,16 @@ series:
     data_generator: |
       const hourly = entity.attributes.hourly || [];
       let sum = 0;
-      return hourly.map(h => {
+      const pts = hourly.map(h => {
         sum += h.cost;
         return [new Date(h.start).getTime(), Math.round(sum * 100) / 100];
       });
+      if (pts.length) {
+        const eod = new Date();
+        eod.setHours(23, 59, 59, 999);
+        pts.push([eod.getTime(), pts[pts.length - 1][1]]);
+      }
+      return pts;
 apex_config:
   chart:
     height: 300

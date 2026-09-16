@@ -15,6 +15,7 @@ series:
   - entity: sensor.pstryk_cost_month
     type: column
     name: Koszt dnia
+    float_precision: 2
     unit: PLN
     yaxis_id: dzien
     data_generator: |
@@ -23,6 +24,7 @@ series:
   - entity: sensor.pstryk_cost_month
     type: line
     name: Narastająco (z prognozą)
+    float_precision: 0
     unit: PLN
     yaxis_id: narastajaco
     show:
