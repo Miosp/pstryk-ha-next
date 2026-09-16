@@ -21,9 +21,9 @@ series:
   - entity: sensor.pstryk_current_price
     type: column
     name: Tanie godziny
+    color: "#4caf50"
     show:
       legend_value: false
-    color: "#4caf50"
     data_generator: |
       const attrs = entity.attributes;
       const all = (attrs.today_prices || []).concat(attrs.tomorrow_prices || [])
@@ -33,9 +33,9 @@ series:
   - entity: sensor.pstryk_current_price
     type: column
     name: Drogie godziny
+    color: "#f44336"
     show:
       legend_value: false
-    color: "#f44336"
     data_generator: |
       const attrs = entity.attributes;
       const all = (attrs.today_prices || []).concat(attrs.tomorrow_prices || [])
@@ -43,12 +43,12 @@ series:
       return all.filter(p => p.is_expensive)
         .map(p => [new Date(p.start).getTime(), p.gross]);
   - entity: sensor.pstryk_current_price
-    type: column
+    type: line
     name: Teraz
+    color: "#ff9800"
+    stroke_width: 0
     show:
       legend_value: false
-    color: "#ff9800"
-    opacity: 0.35
     data_generator: |
       const attrs = entity.attributes;
       const all = (attrs.today_prices || []).concat(attrs.tomorrow_prices || [])
@@ -62,6 +62,9 @@ series:
 apex_config:
   chart:
     height: 300
+    stacked: true
+  markers:
+    size: 8
   plotOptions:
     bar:
       columnWidth: 60%
