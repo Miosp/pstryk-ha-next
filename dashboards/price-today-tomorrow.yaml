@@ -18,9 +18,9 @@ series:
   - entity: sensor.pstryk_current_price
     type: column
     name: Cena
-    in_header: before_now
     show:
       legend_value: false
+      in_header: before_now
     data_generator: |
       const attrs = entity.attributes;
       const all = (attrs.today_prices || []).concat(attrs.tomorrow_prices || [])

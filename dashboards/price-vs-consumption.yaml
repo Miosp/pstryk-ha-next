@@ -28,7 +28,8 @@ series:
     type: line
     name: Cena PLN/kWh
     yaxis_id: cena
-    in_header: before_now
+    show:
+      in_header: before_now
     curve: stepline
     data_generator: |
       const today = entity.attributes.today_prices || [];
@@ -40,7 +41,8 @@ series:
     name: Koszt narastająco
     unit: PLN
     yaxis_id: koszt
-    in_header: false
+    show:
+      in_header: false
     curve: straight
     stroke_width: 2
     data_generator: |

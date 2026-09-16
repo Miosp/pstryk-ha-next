@@ -25,7 +25,8 @@ series:
     name: Narastająco (z prognozą)
     unit: PLN
     yaxis_id: narastajaco
-    in_header: false
+    show:
+      in_header: false
     curve: straight
     data_generator: |
       const daily = entity.attributes.daily || [];
