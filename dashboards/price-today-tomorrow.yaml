@@ -20,7 +20,7 @@ series:
     name: Cena
     show:
       legend_value: false
-      in_header: before_now
+      in_header: raw
     data_generator: |
       const attrs = entity.attributes;
       const all = (attrs.today_prices || []).concat(attrs.tomorrow_prices || [])

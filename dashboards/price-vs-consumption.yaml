@@ -21,6 +21,8 @@ series:
     name: Zużycie kWh
     unit: kWh
     yaxis_id: kwh
+    show:
+      in_header: raw
     data_generator: |
       const hourly = entity.attributes.hourly || [];
       return hourly.map(h => [new Date(h.start).getTime(), h.kwh]);
@@ -29,7 +31,7 @@ series:
     name: Cena PLN/kWh
     yaxis_id: cena
     show:
-      in_header: before_now
+      in_header: raw
     curve: stepline
     data_generator: |
       const today = entity.attributes.today_prices || [];
