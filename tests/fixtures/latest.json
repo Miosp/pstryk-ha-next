@@ -1,0 +1,45 @@
+{
+ "frames": {
+  "meter_values": {
+   "resolution": 1,
+   "as_of": "2026-09-16T11:30:00Z",
+   "energy_active_import_register": 0.005,
+   "energy_active_export_register": 0,
+   "energy_balance": 0.005
+  },
+  "cost": {
+   "resolution": 3,
+   "as_of": "2026-09-16T11:00:00Z",
+   "var_dist_cost_net": 0.05,
+   "fix_dist_cost_net": 0.05,
+   "energy_cost_net": 0.05,
+   "service_cost_net": 0.05,
+   "excise": 0.05,
+   "power_fee_cost_net": 0.05,
+   "vat": 0.05,
+   "var_dist_cost_vat": 0.05,
+   "fix_dist_cost_vat": 0.05,
+   "energy_import_cost": 0.61,
+   "energy_sold_value": 0,
+   "energy_sold_value_net": 0,
+   "energy_balance_value": 0.61
+  },
+  "pricing": {
+   "resolution": 3,
+   "as_of": "2026-09-16T11:00:00Z",
+   "tge_price": 0.40001,
+   "dist_price": 0.2638,
+   "service_price": 0.08,
+   "base_price": 0.74381,
+   "vat_component": 0.17107630000000001,
+   "excise_component": 0.005,
+   "full_price": 0.9198862999999999,
+   "price_net": 0.40001,
+   "price_gross": 0.9198862999999999,
+   "price_prosumer_net": 0.40001,
+   "price_prosumer_gross": 0.49201229999999996,
+   "is_cheap": false,
+   "is_expensive": false
+  }
+ }
+}

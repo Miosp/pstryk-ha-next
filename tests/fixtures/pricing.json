@@ -1,0 +1,1532 @@
+{
+ "frames": [
+  {
+   "start": "2026-09-14T22:00:00Z",
+   "end": "2026-09-14T23:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.90901,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 1.07171,
+     "vat_component": 0.2464933,
+     "excise_component": 0.005,
+     "full_price": 1.3232032999999999,
+     "price_net": 0.90901,
+     "price_gross": 1.3232032999999999,
+     "price_prosumer_net": 0.90901,
+     "price_prosumer_gross": 1.1180823,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-14T23:00:00Z",
+   "end": "2026-09-15T00:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.84648,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 1.00918,
+     "vat_component": 0.2321114,
+     "excise_component": 0.005,
+     "full_price": 1.2462913999999998,
+     "price_net": 0.84648,
+     "price_gross": 1.2462913999999998,
+     "price_prosumer_net": 0.84648,
+     "price_prosumer_gross": 1.0411704,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T00:00:00Z",
+   "end": "2026-09-15T01:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.81643,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.97913,
+     "vat_component": 0.2251999,
+     "excise_component": 0.005,
+     "full_price": 1.2093298999999997,
+     "price_net": 0.81643,
+     "price_gross": 1.2093298999999997,
+     "price_prosumer_net": 0.81643,
+     "price_prosumer_gross": 1.0042089,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T01:00:00Z",
+   "end": "2026-09-15T02:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.79587,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.9585699999999999,
+     "vat_component": 0.2204711,
+     "excise_component": 0.005,
+     "full_price": 1.1840410999999997,
+     "price_net": 0.79587,
+     "price_gross": 1.1840410999999997,
+     "price_prosumer_net": 0.79587,
+     "price_prosumer_gross": 0.9789201,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T02:00:00Z",
+   "end": "2026-09-15T03:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.80927,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.97197,
+     "vat_component": 0.2235531,
+     "excise_component": 0.005,
+     "full_price": 1.2005230999999998,
+     "price_net": 0.80927,
+     "price_gross": 1.2005230999999998,
+     "price_prosumer_net": 0.80927,
+     "price_prosumer_gross": 0.9954021000000001,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T03:00:00Z",
+   "end": "2026-09-15T04:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.8548300000000001,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 1.01753,
+     "vat_component": 0.23403190000000001,
+     "excise_component": 0.005,
+     "full_price": 1.2565619,
+     "price_net": 0.8548300000000001,
+     "price_gross": 1.2565619,
+     "price_prosumer_net": 0.8548300000000001,
+     "price_prosumer_gross": 1.0514409,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T04:00:00Z",
+   "end": "2026-09-15T05:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 1.0955899999999998,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 1.25829,
+     "vat_component": 0.2894067,
+     "excise_component": 0.005,
+     "full_price": 1.5526966999999998,
+     "price_net": 1.0955899999999998,
+     "price_gross": 1.5526966999999998,
+     "price_prosumer_net": 1.0955899999999998,
+     "price_prosumer_gross": 1.3475756999999997,
+     "is_cheap": false,
+     "is_expensive": true
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T05:00:00Z",
+   "end": "2026-09-15T06:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 1.19902,
+     "dist_price": 0.2638,
+     "service_price": 0.08,
+     "base_price": 1.54282,
+     "vat_component": 0.3548486,
+     "excise_component": 0.005,
+     "full_price": 1.9026686,
+     "price_net": 1.19902,
+     "price_gross": 1.9026686,
+     "price_prosumer_net": 1.19902,
+     "price_prosumer_gross": 1.4747945999999998,
+     "is_cheap": false,
+     "is_expensive": true
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T06:00:00Z",
+   "end": "2026-09-15T07:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 1.00859,
+     "dist_price": 0.2638,
+     "service_price": 0.08,
+     "base_price": 1.3523900000000002,
+     "vat_component": 0.31104970000000004,
+     "excise_component": 0.005,
+     "full_price": 1.6684397000000002,
+     "price_net": 1.00859,
+     "price_gross": 1.6684397000000002,
+     "price_prosumer_net": 1.00859,
+     "price_prosumer_gross": 1.2405657,
+     "is_cheap": false,
+     "is_expensive": true
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T07:00:00Z",
+   "end": "2026-09-15T08:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.7572300000000001,
+     "dist_price": 0.2638,
+     "service_price": 0.08,
+     "base_price": 1.1010300000000002,
+     "vat_component": 0.25323690000000004,
+     "excise_component": 0.005,
+     "full_price": 1.3592669000000002,
+     "price_net": 0.7572300000000001,
+     "price_gross": 1.3592669000000002,
+     "price_prosumer_net": 0.7572300000000001,
+     "price_prosumer_gross": 0.9313929000000001,
+     "is_cheap": false,
+     "is_expensive": true
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T08:00:00Z",
+   "end": "2026-09-15T09:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.5760700000000001,
+     "dist_price": 0.2638,
+     "service_price": 0.08,
+     "base_price": 0.9198700000000001,
+     "vat_component": 0.21157010000000004,
+     "excise_component": 0.005,
+     "full_price": 1.1364401,
+     "price_net": 0.5760700000000001,
+     "price_gross": 1.1364401,
+     "price_prosumer_net": 0.5760700000000001,
+     "price_prosumer_gross": 0.7085661000000001,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T09:00:00Z",
+   "end": "2026-09-15T10:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.43025,
+     "dist_price": 0.2638,
+     "service_price": 0.08,
+     "base_price": 0.77405,
+     "vat_component": 0.1780315,
+     "excise_component": 0.005,
+     "full_price": 0.9570815,
+     "price_net": 0.43025,
+     "price_gross": 0.9570815,
+     "price_prosumer_net": 0.43025,
+     "price_prosumer_gross": 0.5292075,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T10:00:00Z",
+   "end": "2026-09-15T11:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.36502,
+     "dist_price": 0.2638,
+     "service_price": 0.08,
+     "base_price": 0.7088199999999999,
+     "vat_component": 0.1630286,
+     "excise_component": 0.005,
+     "full_price": 0.8768485999999999,
+     "price_net": 0.36502,
+     "price_gross": 0.8768485999999999,
+     "price_prosumer_net": 0.36502,
+     "price_prosumer_gross": 0.4489746,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T11:00:00Z",
+   "end": "2026-09-15T12:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.33592,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.49862,
+     "vat_component": 0.11468260000000001,
+     "excise_component": 0.005,
+     "full_price": 0.6183026,
+     "price_net": 0.33592,
+     "price_gross": 0.6183026,
+     "price_prosumer_net": 0.33592,
+     "price_prosumer_gross": 0.4131816,
+     "is_cheap": true,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T12:00:00Z",
+   "end": "2026-09-15T13:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.40251,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.56521,
+     "vat_component": 0.1299983,
+     "excise_component": 0.005,
+     "full_price": 0.7002083,
+     "price_net": 0.40251,
+     "price_gross": 0.7002083,
+     "price_prosumer_net": 0.40251,
+     "price_prosumer_gross": 0.49508729999999995,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T13:00:00Z",
+   "end": "2026-09-15T14:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.50099,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.66369,
+     "vat_component": 0.1526487,
+     "excise_component": 0.005,
+     "full_price": 0.8213387,
+     "price_net": 0.50099,
+     "price_gross": 0.8213387,
+     "price_prosumer_net": 0.50099,
+     "price_prosumer_gross": 0.6162177000000001,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T14:00:00Z",
+   "end": "2026-09-15T15:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.6303,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.7929999999999999,
+     "vat_component": 0.18239,
+     "excise_component": 0.005,
+     "full_price": 0.9803899999999999,
+     "price_net": 0.6303,
+     "price_gross": 0.9803899999999999,
+     "price_prosumer_net": 0.6303,
+     "price_prosumer_gross": 0.775269,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T15:00:00Z",
+   "end": "2026-09-15T16:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.9285,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 1.0912000000000002,
+     "vat_component": 0.25097600000000003,
+     "excise_component": 0.005,
+     "full_price": 1.3471760000000002,
+     "price_net": 0.9285,
+     "price_gross": 1.3471760000000002,
+     "price_prosumer_net": 0.9285,
+     "price_prosumer_gross": 1.142055,
+     "is_cheap": false,
+     "is_expensive": true
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T16:00:00Z",
+   "end": "2026-09-15T17:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 1.4163,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 1.579,
+     "vat_component": 0.36317,
+     "excise_component": 0.005,
+     "full_price": 1.9471699999999998,
+     "price_net": 1.4163,
+     "price_gross": 1.9471699999999998,
+     "price_prosumer_net": 1.4163,
+     "price_prosumer_gross": 1.7420489999999997,
+     "is_cheap": false,
+     "is_expensive": true
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T17:00:00Z",
+   "end": "2026-09-15T18:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 2.2415599999999998,
+     "dist_price": 0.4333,
+     "service_price": 0.08,
+     "base_price": 2.75486,
+     "vat_component": 0.6336178,
+     "excise_component": 0.005,
+     "full_price": 3.3934778,
+     "price_net": 2.2415599999999998,
+     "price_gross": 3.3934778,
+     "price_prosumer_net": 2.2415599999999998,
+     "price_prosumer_gross": 2.7571187999999998,
+     "is_cheap": false,
+     "is_expensive": true
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T18:00:00Z",
+   "end": "2026-09-15T19:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 1.52099,
+     "dist_price": 0.4333,
+     "service_price": 0.08,
+     "base_price": 2.03429,
+     "vat_component": 0.4678867,
+     "excise_component": 0.005,
+     "full_price": 2.5071766999999996,
+     "price_net": 1.52099,
+     "price_gross": 2.5071766999999996,
+     "price_prosumer_net": 1.52099,
+     "price_prosumer_gross": 1.8708177000000001,
+     "is_cheap": false,
+     "is_expensive": true
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T19:00:00Z",
+   "end": "2026-09-15T20:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.99094,
+     "dist_price": 0.4333,
+     "service_price": 0.08,
+     "base_price": 1.5042400000000002,
+     "vat_component": 0.3459752000000001,
+     "excise_component": 0.005,
+     "full_price": 1.8552152000000002,
+     "price_net": 0.99094,
+     "price_gross": 1.8552152000000002,
+     "price_prosumer_net": 0.99094,
+     "price_prosumer_gross": 1.2188562,
+     "is_cheap": false,
+     "is_expensive": true
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T20:00:00Z",
+   "end": "2026-09-15T21:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.89479,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 1.05749,
+     "vat_component": 0.24322270000000001,
+     "excise_component": 0.005,
+     "full_price": 1.3057127,
+     "price_net": 0.89479,
+     "price_gross": 1.3057127,
+     "price_prosumer_net": 0.89479,
+     "price_prosumer_gross": 1.1005917,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T21:00:00Z",
+   "end": "2026-09-15T22:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.78859,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.95129,
+     "vat_component": 0.2187967,
+     "excise_component": 0.005,
+     "full_price": 1.1750866999999998,
+     "price_net": 0.78859,
+     "price_gross": 1.1750866999999998,
+     "price_prosumer_net": 0.78859,
+     "price_prosumer_gross": 0.9699657,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T22:00:00Z",
+   "end": "2026-09-15T23:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.73101,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.89371,
+     "vat_component": 0.20555330000000002,
+     "excise_component": 0.005,
+     "full_price": 1.1042633,
+     "price_net": 0.73101,
+     "price_gross": 1.1042633,
+     "price_prosumer_net": 0.73101,
+     "price_prosumer_gross": 0.8991423000000001,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-15T23:00:00Z",
+   "end": "2026-09-16T00:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.7010000000000001,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.8637,
+     "vat_component": 0.19865100000000002,
+     "excise_component": 0.005,
+     "full_price": 1.067351,
+     "price_net": 0.7010000000000001,
+     "price_gross": 1.067351,
+     "price_prosumer_net": 0.7010000000000001,
+     "price_prosumer_gross": 0.86223,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T00:00:00Z",
+   "end": "2026-09-16T01:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.68101,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.84371,
+     "vat_component": 0.1940533,
+     "excise_component": 0.005,
+     "full_price": 1.0427632999999998,
+     "price_net": 0.68101,
+     "price_gross": 1.0427632999999998,
+     "price_prosumer_net": 0.68101,
+     "price_prosumer_gross": 0.8376423,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T01:00:00Z",
+   "end": "2026-09-16T02:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.68174,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.84444,
+     "vat_component": 0.1942212,
+     "excise_component": 0.005,
+     "full_price": 1.0436611999999998,
+     "price_net": 0.68174,
+     "price_gross": 1.0436611999999998,
+     "price_prosumer_net": 0.68174,
+     "price_prosumer_gross": 0.8385402,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T02:00:00Z",
+   "end": "2026-09-16T03:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.69144,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.85414,
+     "vat_component": 0.19645220000000002,
+     "excise_component": 0.005,
+     "full_price": 1.0555922,
+     "price_net": 0.69144,
+     "price_gross": 1.0555922,
+     "price_prosumer_net": 0.69144,
+     "price_prosumer_gross": 0.8504712000000001,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T03:00:00Z",
+   "end": "2026-09-16T04:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.75025,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.9129499999999999,
+     "vat_component": 0.20997849999999998,
+     "excise_component": 0.005,
+     "full_price": 1.1279285,
+     "price_net": 0.75025,
+     "price_gross": 1.1279285,
+     "price_prosumer_net": 0.75025,
+     "price_prosumer_gross": 0.9228075,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T04:00:00Z",
+   "end": "2026-09-16T05:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.89425,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 1.05695,
+     "vat_component": 0.24309850000000002,
+     "excise_component": 0.005,
+     "full_price": 1.3050484999999998,
+     "price_net": 0.89425,
+     "price_gross": 1.3050484999999998,
+     "price_prosumer_net": 0.89425,
+     "price_prosumer_gross": 1.0999275,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T05:00:00Z",
+   "end": "2026-09-16T06:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.90324,
+     "dist_price": 0.2638,
+     "service_price": 0.08,
+     "base_price": 1.2470400000000001,
+     "vat_component": 0.28681920000000005,
+     "excise_component": 0.005,
+     "full_price": 1.5388592,
+     "price_net": 0.90324,
+     "price_gross": 1.5388592,
+     "price_prosumer_net": 0.90324,
+     "price_prosumer_gross": 1.1109852,
+     "is_cheap": false,
+     "is_expensive": true
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T06:00:00Z",
+   "end": "2026-09-16T07:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.6900000000000001,
+     "dist_price": 0.2638,
+     "service_price": 0.08,
+     "base_price": 1.0338,
+     "vat_component": 0.237774,
+     "excise_component": 0.005,
+     "full_price": 1.2765739999999999,
+     "price_net": 0.6900000000000001,
+     "price_gross": 1.2765739999999999,
+     "price_prosumer_net": 0.6900000000000001,
+     "price_prosumer_gross": 0.8487,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T07:00:00Z",
+   "end": "2026-09-16T08:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.541,
+     "dist_price": 0.2638,
+     "service_price": 0.08,
+     "base_price": 0.8847999999999999,
+     "vat_component": 0.203504,
+     "excise_component": 0.005,
+     "full_price": 1.0933039999999998,
+     "price_net": 0.541,
+     "price_gross": 1.0933039999999998,
+     "price_prosumer_net": 0.541,
+     "price_prosumer_gross": 0.6654300000000001,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T08:00:00Z",
+   "end": "2026-09-16T09:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.49476,
+     "dist_price": 0.2638,
+     "service_price": 0.08,
+     "base_price": 0.8385599999999999,
+     "vat_component": 0.19286879999999998,
+     "excise_component": 0.005,
+     "full_price": 1.0364287999999997,
+     "price_net": 0.49476,
+     "price_gross": 1.0364287999999997,
+     "price_prosumer_net": 0.49476,
+     "price_prosumer_gross": 0.6085548,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T09:00:00Z",
+   "end": "2026-09-16T10:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.449,
+     "dist_price": 0.2638,
+     "service_price": 0.08,
+     "base_price": 0.7928,
+     "vat_component": 0.182344,
+     "excise_component": 0.005,
+     "full_price": 0.9801439999999999,
+     "price_net": 0.449,
+     "price_gross": 0.9801439999999999,
+     "price_prosumer_net": 0.449,
+     "price_prosumer_gross": 0.55227,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T10:00:00Z",
+   "end": "2026-09-16T11:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.40001,
+     "dist_price": 0.2638,
+     "service_price": 0.08,
+     "base_price": 0.74381,
+     "vat_component": 0.17107630000000001,
+     "excise_component": 0.005,
+     "full_price": 0.9198862999999999,
+     "price_net": 0.40001,
+     "price_gross": 0.9198862999999999,
+     "price_prosumer_net": 0.40001,
+     "price_prosumer_gross": 0.49201229999999996,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T11:00:00Z",
+   "end": "2026-09-16T12:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.38375000000000004,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.54645,
+     "vat_component": 0.1256835,
+     "excise_component": 0.005,
+     "full_price": 0.6771334999999999,
+     "price_net": 0.38375000000000004,
+     "price_gross": 0.6771334999999999,
+     "price_prosumer_net": 0.38375000000000004,
+     "price_prosumer_gross": 0.47201250000000006,
+     "is_cheap": true,
+     "is_expensive": false
+    }
+   },
+   "is_live": true
+  },
+  {
+   "start": "2026-09-16T12:00:00Z",
+   "end": "2026-09-16T13:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.42005000000000003,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.58275,
+     "vat_component": 0.1340325,
+     "excise_component": 0.005,
+     "full_price": 0.7217825,
+     "price_net": 0.42005000000000003,
+     "price_gross": 0.7217825,
+     "price_prosumer_net": 0.42005000000000003,
+     "price_prosumer_gross": 0.5166615,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T13:00:00Z",
+   "end": "2026-09-16T14:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.55089,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.71359,
+     "vat_component": 0.16412569999999999,
+     "excise_component": 0.005,
+     "full_price": 0.8827156999999999,
+     "price_net": 0.55089,
+     "price_gross": 0.8827156999999999,
+     "price_prosumer_net": 0.55089,
+     "price_prosumer_gross": 0.6775947,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T14:00:00Z",
+   "end": "2026-09-16T15:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.70252,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.86522,
+     "vat_component": 0.1990006,
+     "excise_component": 0.005,
+     "full_price": 1.0692206,
+     "price_net": 0.70252,
+     "price_gross": 1.0692206,
+     "price_prosumer_net": 0.70252,
+     "price_prosumer_gross": 0.8640996000000001,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T15:00:00Z",
+   "end": "2026-09-16T16:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.9101,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 1.0728,
+     "vat_component": 0.24674400000000002,
+     "excise_component": 0.005,
+     "full_price": 1.324544,
+     "price_net": 0.9101,
+     "price_gross": 1.324544,
+     "price_prosumer_net": 0.9101,
+     "price_prosumer_gross": 1.119423,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T16:00:00Z",
+   "end": "2026-09-16T17:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 1.04921,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 1.21191,
+     "vat_component": 0.2787393,
+     "excise_component": 0.005,
+     "full_price": 1.4956493,
+     "price_net": 1.04921,
+     "price_gross": 1.4956493,
+     "price_prosumer_net": 1.04921,
+     "price_prosumer_gross": 1.2905282999999999,
+     "is_cheap": false,
+     "is_expensive": true
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T17:00:00Z",
+   "end": "2026-09-16T18:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 1.27685,
+     "dist_price": 0.4333,
+     "service_price": 0.08,
+     "base_price": 1.7901500000000001,
+     "vat_component": 0.41173450000000006,
+     "excise_component": 0.005,
+     "full_price": 2.2068845,
+     "price_net": 1.27685,
+     "price_gross": 2.2068845,
+     "price_prosumer_net": 1.27685,
+     "price_prosumer_gross": 1.5705255,
+     "is_cheap": false,
+     "is_expensive": true
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T18:00:00Z",
+   "end": "2026-09-16T19:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 1.14307,
+     "dist_price": 0.4333,
+     "service_price": 0.08,
+     "base_price": 1.6563700000000001,
+     "vat_component": 0.38096510000000006,
+     "excise_component": 0.005,
+     "full_price": 2.0423351,
+     "price_net": 1.14307,
+     "price_gross": 2.0423351,
+     "price_prosumer_net": 1.14307,
+     "price_prosumer_gross": 1.4059761,
+     "is_cheap": false,
+     "is_expensive": true
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T19:00:00Z",
+   "end": "2026-09-16T20:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.94853,
+     "dist_price": 0.4333,
+     "service_price": 0.08,
+     "base_price": 1.46183,
+     "vat_component": 0.3362209,
+     "excise_component": 0.005,
+     "full_price": 1.8030509,
+     "price_net": 0.94853,
+     "price_gross": 1.8030509,
+     "price_prosumer_net": 0.94853,
+     "price_prosumer_gross": 1.1666919,
+     "is_cheap": false,
+     "is_expensive": true
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T20:00:00Z",
+   "end": "2026-09-16T21:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.83901,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 1.00171,
+     "vat_component": 0.23039330000000002,
+     "excise_component": 0.005,
+     "full_price": 1.2371033,
+     "price_net": 0.83901,
+     "price_gross": 1.2371033,
+     "price_prosumer_net": 0.83901,
+     "price_prosumer_gross": 1.0319823000000001,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T21:00:00Z",
+   "end": "2026-09-16T22:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.73389,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.89659,
+     "vat_component": 0.2062157,
+     "excise_component": 0.005,
+     "full_price": 1.1078057,
+     "price_net": 0.73389,
+     "price_gross": 1.1078057,
+     "price_prosumer_net": 0.73389,
+     "price_prosumer_gross": 0.9026847,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T22:00:00Z",
+   "end": "2026-09-16T23:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.75,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.9127,
+     "vat_component": 0.209921,
+     "excise_component": 0.005,
+     "full_price": 1.1276209999999998,
+     "price_net": 0.75,
+     "price_gross": 1.1276209999999998,
+     "price_prosumer_net": 0.75,
+     "price_prosumer_gross": 0.9225,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-16T23:00:00Z",
+   "end": "2026-09-17T00:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.72882,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.89152,
+     "vat_component": 0.2050496,
+     "excise_component": 0.005,
+     "full_price": 1.1015696,
+     "price_net": 0.72882,
+     "price_gross": 1.1015696,
+     "price_prosumer_net": 0.72882,
+     "price_prosumer_gross": 0.8964486,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T00:00:00Z",
+   "end": "2026-09-17T01:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.69127,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.85397,
+     "vat_component": 0.1964131,
+     "excise_component": 0.005,
+     "full_price": 1.0553830999999998,
+     "price_net": 0.69127,
+     "price_gross": 1.0553830999999998,
+     "price_prosumer_net": 0.69127,
+     "price_prosumer_gross": 0.8502621,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T01:00:00Z",
+   "end": "2026-09-17T02:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.67522,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.83792,
+     "vat_component": 0.19272160000000002,
+     "excise_component": 0.005,
+     "full_price": 1.0356416,
+     "price_net": 0.67522,
+     "price_gross": 1.0356416,
+     "price_prosumer_net": 0.67522,
+     "price_prosumer_gross": 0.8305206,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T02:00:00Z",
+   "end": "2026-09-17T03:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.6679700000000001,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.83067,
+     "vat_component": 0.1910541,
+     "excise_component": 0.005,
+     "full_price": 1.0267240999999998,
+     "price_net": 0.6679700000000001,
+     "price_gross": 1.0267240999999998,
+     "price_prosumer_net": 0.6679700000000001,
+     "price_prosumer_gross": 0.8216031,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T03:00:00Z",
+   "end": "2026-09-17T04:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.72599,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.88869,
+     "vat_component": 0.20439870000000002,
+     "excise_component": 0.005,
+     "full_price": 1.0980887,
+     "price_net": 0.72599,
+     "price_gross": 1.0980887,
+     "price_prosumer_net": 0.72599,
+     "price_prosumer_gross": 0.8929677,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T04:00:00Z",
+   "end": "2026-09-17T05:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.87387,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 1.03657,
+     "vat_component": 0.23841110000000001,
+     "excise_component": 0.005,
+     "full_price": 1.2799810999999999,
+     "price_net": 0.87387,
+     "price_gross": 1.2799810999999999,
+     "price_prosumer_net": 0.87387,
+     "price_prosumer_gross": 1.0748601,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T05:00:00Z",
+   "end": "2026-09-17T06:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.93095,
+     "dist_price": 0.2638,
+     "service_price": 0.08,
+     "base_price": 1.27475,
+     "vat_component": 0.2931925,
+     "excise_component": 0.005,
+     "full_price": 1.5729425,
+     "price_net": 0.93095,
+     "price_gross": 1.5729425,
+     "price_prosumer_net": 0.93095,
+     "price_prosumer_gross": 1.1450685,
+     "is_cheap": false,
+     "is_expensive": true
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T06:00:00Z",
+   "end": "2026-09-17T07:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.8605499999999999,
+     "dist_price": 0.2638,
+     "service_price": 0.08,
+     "base_price": 1.20435,
+     "vat_component": 0.27700050000000004,
+     "excise_component": 0.005,
+     "full_price": 1.4863505,
+     "price_net": 0.8605499999999999,
+     "price_gross": 1.4863505,
+     "price_prosumer_net": 0.8605499999999999,
+     "price_prosumer_gross": 1.0584764999999998,
+     "is_cheap": false,
+     "is_expensive": true
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T07:00:00Z",
+   "end": "2026-09-17T08:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.67901,
+     "dist_price": 0.2638,
+     "service_price": 0.08,
+     "base_price": 1.02281,
+     "vat_component": 0.23524630000000002,
+     "excise_component": 0.005,
+     "full_price": 1.2630563,
+     "price_net": 0.67901,
+     "price_gross": 1.2630563,
+     "price_prosumer_net": 0.67901,
+     "price_prosumer_gross": 0.8351823,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T08:00:00Z",
+   "end": "2026-09-17T09:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.51763,
+     "dist_price": 0.2638,
+     "service_price": 0.08,
+     "base_price": 0.86143,
+     "vat_component": 0.19812890000000002,
+     "excise_component": 0.005,
+     "full_price": 1.0645589,
+     "price_net": 0.51763,
+     "price_gross": 1.0645589,
+     "price_prosumer_net": 0.51763,
+     "price_prosumer_gross": 0.6366849,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T09:00:00Z",
+   "end": "2026-09-17T10:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.44674,
+     "dist_price": 0.2638,
+     "service_price": 0.08,
+     "base_price": 0.7905399999999999,
+     "vat_component": 0.1818242,
+     "excise_component": 0.005,
+     "full_price": 0.9773641999999999,
+     "price_net": 0.44674,
+     "price_gross": 0.9773641999999999,
+     "price_prosumer_net": 0.44674,
+     "price_prosumer_gross": 0.5494902,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T10:00:00Z",
+   "end": "2026-09-17T11:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.37999,
+     "dist_price": 0.2638,
+     "service_price": 0.08,
+     "base_price": 0.7237899999999999,
+     "vat_component": 0.1664717,
+     "excise_component": 0.005,
+     "full_price": 0.8952616999999999,
+     "price_net": 0.37999,
+     "price_gross": 0.8952616999999999,
+     "price_prosumer_net": 0.37999,
+     "price_prosumer_gross": 0.46738769999999996,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T11:00:00Z",
+   "end": "2026-09-17T12:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.36776,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.5304599999999999,
+     "vat_component": 0.12200579999999998,
+     "excise_component": 0.005,
+     "full_price": 0.6574657999999999,
+     "price_net": 0.36776,
+     "price_gross": 0.6574657999999999,
+     "price_prosumer_net": 0.36776,
+     "price_prosumer_gross": 0.4523448,
+     "is_cheap": true,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T12:00:00Z",
+   "end": "2026-09-17T13:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.40572,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.56842,
+     "vat_component": 0.1307366,
+     "excise_component": 0.005,
+     "full_price": 0.7041566,
+     "price_net": 0.40572,
+     "price_gross": 0.7041566,
+     "price_prosumer_net": 0.40572,
+     "price_prosumer_gross": 0.4990356,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T13:00:00Z",
+   "end": "2026-09-17T14:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.44541000000000003,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.60811,
+     "vat_component": 0.13986530000000003,
+     "excise_component": 0.005,
+     "full_price": 0.7529753,
+     "price_net": 0.44541000000000003,
+     "price_gross": 0.7529753,
+     "price_prosumer_net": 0.44541000000000003,
+     "price_prosumer_gross": 0.5478543,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T14:00:00Z",
+   "end": "2026-09-17T15:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.56225,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.72495,
+     "vat_component": 0.1667385,
+     "excise_component": 0.005,
+     "full_price": 0.8966885,
+     "price_net": 0.56225,
+     "price_gross": 0.8966885,
+     "price_prosumer_net": 0.56225,
+     "price_prosumer_gross": 0.6915675,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T15:00:00Z",
+   "end": "2026-09-17T16:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.8450700000000001,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 1.00777,
+     "vat_component": 0.23178710000000002,
+     "excise_component": 0.005,
+     "full_price": 1.2445571,
+     "price_net": 0.8450700000000001,
+     "price_gross": 1.2445571,
+     "price_prosumer_net": 0.8450700000000001,
+     "price_prosumer_gross": 1.0394361,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T16:00:00Z",
+   "end": "2026-09-17T17:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 1.15243,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 1.3151300000000001,
+     "vat_component": 0.3024799,
+     "excise_component": 0.005,
+     "full_price": 1.6226099,
+     "price_net": 1.15243,
+     "price_gross": 1.6226099,
+     "price_prosumer_net": 1.15243,
+     "price_prosumer_gross": 1.4174889000000002,
+     "is_cheap": false,
+     "is_expensive": true
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T17:00:00Z",
+   "end": "2026-09-17T18:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 1.4371500000000001,
+     "dist_price": 0.4333,
+     "service_price": 0.08,
+     "base_price": 1.9504500000000002,
+     "vat_component": 0.4486035000000001,
+     "excise_component": 0.005,
+     "full_price": 2.4040535000000003,
+     "price_net": 1.4371500000000001,
+     "price_gross": 2.4040535000000003,
+     "price_prosumer_net": 1.4371500000000001,
+     "price_prosumer_gross": 1.7676945000000002,
+     "is_cheap": false,
+     "is_expensive": true
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T18:00:00Z",
+   "end": "2026-09-17T19:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 1.23292,
+     "dist_price": 0.4333,
+     "service_price": 0.08,
+     "base_price": 1.74622,
+     "vat_component": 0.40163060000000006,
+     "excise_component": 0.005,
+     "full_price": 2.1528506,
+     "price_net": 1.23292,
+     "price_gross": 2.1528506,
+     "price_prosumer_net": 1.23292,
+     "price_prosumer_gross": 1.5164916,
+     "is_cheap": false,
+     "is_expensive": true
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T19:00:00Z",
+   "end": "2026-09-17T20:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.8805499999999999,
+     "dist_price": 0.4333,
+     "service_price": 0.08,
+     "base_price": 1.39385,
+     "vat_component": 0.3205855,
+     "excise_component": 0.005,
+     "full_price": 1.7194355,
+     "price_net": 0.8805499999999999,
+     "price_gross": 1.7194355,
+     "price_prosumer_net": 0.8805499999999999,
+     "price_prosumer_gross": 1.0830765,
+     "is_cheap": false,
+     "is_expensive": true
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T20:00:00Z",
+   "end": "2026-09-17T21:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.8282200000000001,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.99092,
+     "vat_component": 0.22791160000000002,
+     "excise_component": 0.005,
+     "full_price": 1.2238315999999998,
+     "price_net": 0.8282200000000001,
+     "price_gross": 1.2238315999999998,
+     "price_prosumer_net": 0.8282200000000001,
+     "price_prosumer_gross": 1.0187106000000001,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  },
+  {
+   "start": "2026-09-17T21:00:00Z",
+   "end": "2026-09-17T22:00:00Z",
+   "metrics": {
+    "pricing": {
+     "tge_price": 0.7305900000000001,
+     "dist_price": 0.0827,
+     "service_price": 0.08,
+     "base_price": 0.89329,
+     "vat_component": 0.20545670000000002,
+     "excise_component": 0.005,
+     "full_price": 1.1037466999999999,
+     "price_net": 0.7305900000000001,
+     "price_gross": 1.1037466999999999,
+     "price_prosumer_net": 0.7305900000000001,
+     "price_prosumer_gross": 0.8986257000000001,
+     "is_cheap": false,
+     "is_expensive": false
+    }
+   }
+  }
+ ],
+ "summary": {
+  "pricing": {
+   "tge_price_avg": 0.7846904166666668,
+   "dist_price_avg": 0.17179999999999973,
+   "service_price_avg": 0.08,
+   "base_price_avg": 1.0364904166666666,
+   "vat_component_avg": 0.2383927958333333,
+   "excise_component_avg": 0.005,
+   "full_price_avg": 1.2798832125,
+   "price_net_avg": 0.7846904166666668,
+   "price_gross_avg": 1.2798832125,
+   "price_prosumer_net_avg": 0.7846904166666668,
+   "price_prosumer_gross_avg": 0.9651692125000001
+  }
+ }
+}
