@@ -17,20 +17,33 @@ series:
       return daily.map(d => [new Date(d.start + "T00:00:00").getTime(), d.cost]);
   - entity: sensor.pstryk_cost_month
     type: line
-    name: Prognoza miesiąca
+    name: Narastająco (z prognozą)
     unit: PLN
-    extend_to: end
+    curve: straight
     data_generator: |
-      const now = new Date().getTime();
+      const daily = entity.attributes.daily || [];
+      let sum = 0;
+      const pts = daily.map(d => {
+        sum += d.cost;
+        return [new Date(d.start + "T00:00:00").getTime(), Math.round(sum * 100) / 100];
+      });
       const forecast = entity.attributes.forecast;
-      const current = parseFloat(entity.state);
-      if (!isFinite(current) || forecast === undefined || forecast === null) return [];
-      const endOfMonth = new Date(); endOfMonth.setMonth(endOfMonth.getMonth() + 1, 0);
-      endOfMonth.setHours(23, 59, 59, 999);
-      return [[now, current], [endOfMonth.getTime(), forecast]];
+      if (forecast !== undefined && forecast !== null) {
+        const eom = new Date();
+        eom.setMonth(eom.getMonth() + 1, 0);
+        eom.setHours(23, 59, 59, 999);
+        pts.push([eom.getTime(), forecast]);
+      }
+      return pts;
 apex_config:
   chart:
     height: 300
+  yaxis:
+    - seriesName: Koszt dnia
+      decimalsInFloat: 1
+    - seriesName: Narastająco (z prognozą)
+      opposite: true
+      decimalsInFloat: 0
   xaxis:
     type: datetime
     labels:
