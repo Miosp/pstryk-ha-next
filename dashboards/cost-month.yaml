@@ -13,7 +13,8 @@ series:
     name: Koszt dnia
     unit: PLN
     data_generator: |
-      return attributes.daily.map(d => [new Date(d.start + "T00:00:00").getTime(), d.cost]);
+      const daily = attributes.daily || [];
+      return daily.map(d => [new Date(d.start + "T00:00:00").getTime(), d.cost]);
   - entity: sensor.pstryk_cost_month
     type: line
     name: Prognoza miesiąca
@@ -21,9 +22,11 @@ series:
     extend_to: end
     data_generator: |
       const now = new Date().getTime();
+      const forecast = attributes.forecast;
+      if (forecast === undefined || forecast === null) return [];
       const endOfMonth = new Date(); endOfMonth.setMonth(endOfMonth.getMonth() + 1, 0);
       endOfMonth.setHours(23, 59, 59, 999);
-      return [[now, state], [endOfMonth.getTime(), attributes.forecast]];
+      return [[now, state], [endOfMonth.getTime(), forecast]];
 apex_config:
   chart:
     height: 300

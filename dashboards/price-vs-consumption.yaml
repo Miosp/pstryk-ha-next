@@ -11,13 +11,15 @@ series:
     name: Zużycie kWh
     unit: kWh
     data_generator: |
-      return attributes.hourly.map(h => [new Date(h.start).getTime(), h.kwh]);
+      const hourly = attributes.hourly || [];
+      return hourly.map(h => [new Date(h.start).getTime(), h.kwh]);
   - entity: sensor.pstryk_current_price
     type: line
     name: Cena PLN/kWh
     curve: stepline
     data_generator: |
-      return attributes.today_prices
+      const today = attributes.today_prices || [];
+      return today
         .filter(p => p.gross !== null)
         .map(p => [new Date(p.start).getTime(), p.gross]);
 apex_config:
