@@ -10,6 +10,8 @@ series:
   - entity: sensor.pstryk_current_price
     type: column
     name: Cena
+    show:
+      legend_value: false
     data_generator: |
       const attrs = entity.attributes;
       const all = (attrs.today_prices || []).concat(attrs.tomorrow_prices || [])
@@ -19,6 +21,8 @@ series:
   - entity: sensor.pstryk_current_price
     type: column
     name: Tanie godziny
+    show:
+      legend_value: false
     color: "#4caf50"
     data_generator: |
       const attrs = entity.attributes;
@@ -29,6 +33,8 @@ series:
   - entity: sensor.pstryk_current_price
     type: column
     name: Drogie godziny
+    show:
+      legend_value: false
     color: "#f44336"
     data_generator: |
       const attrs = entity.attributes;
@@ -39,6 +45,8 @@ series:
   - entity: sensor.pstryk_current_price
     type: column
     name: Teraz
+    show:
+      legend_value: false
     color: "#ff9800"
     opacity: 0.35
     data_generator: |
