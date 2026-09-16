@@ -1,7 +1,7 @@
 {
   "domain": "pstryk_energy",
   "name": "Pstryk Energy",
-  "codeowners": ["@miosp"],
+  "codeowners": ["@Miosp"],
   "config_flow": true,
   "diagnostics": true,
   "documentation": "https://github.com/miosp/pstryk-ha-next",
