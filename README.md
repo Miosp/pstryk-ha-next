@@ -77,7 +77,7 @@ Otwórz okno **Konfiguruj** przy integracji:
 
 ## Pulpity
 
-Katalog [`dashboards/`](dashboards/) zawiera trzy gotowe karty [ApexCharts](https://github.com/RomRider/apexcharts-card) oraz przewodnik po panelu Energy Dashboard:
+Katalog [`dashboards/`](dashboards/) zawiera trzy gotowe karty [ApexCharts](https://github.com/RomRider/apexcharts-card):
 
 - `price-today-tomorrow.yaml`: godzinowy wykres cen na dziś i na jutro. Łatwo na nim wypatrzeć godziny tanie i drogie.
 - `price-vs-consumption.yaml`: cena nałożona na Twoje godzinowe zużycie.
@@ -91,7 +91,13 @@ Jak używać:
 
 ### Panel Energy Dashboard
 
-`sensor.pstryk_consumption_today` podłącza się do natywnego panelu HA Energy Dashboard. Instrukcja krok po kroku znajduje się w [`dashboards/energy-dashboard.md`](dashboards/energy-dashboard.md): dodaj ją w sekcji **Energia → Zużycie z sieci**, a opcjonalnie użyj `sensor.pstryk_cost_today`, żeby porównać oficjalne szacunki kosztów ze składnikami rozliczeniowymi Pstryka.
+`sensor.pstryk_consumption_today` podłącza się do natywnego panelu HA Energy Dashboard:
+
+1. Wejdź w **Ustawienia → Pulpity → Energia**.
+2. W sekcji **Zużycie z sieci** dodaj:
+   - Zużycie: `sensor.pstryk_consumption_today` (klasa `energy`, `total_increasing`, dzienny reset — dane gotowe do statystyk).
+   - Koszt: wybierz „Użyj aktualnej ceny" i wskaż `sensor.pstryk_current_price`. Przy taryfie dynamicznej HA przemnoży godzinowe kWh przez godzinową cenę brutto.
+3. Gotowe. Czujniki kosztu Pstryka (`sensor.pstryk_cost_today` itd.) pozostają dostępne dla kart i automatyzacji; panel Energii liczy własny koszt na podstawie encji ceny.
 
 ## Rozwiązywanie problemów
 
