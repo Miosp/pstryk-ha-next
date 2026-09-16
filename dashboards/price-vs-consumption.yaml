@@ -2,6 +2,8 @@ type: custom:apexcharts-card
 header:
   title: Pstryk — cena vs zużycie (dziś)
   show: true
+  show_states: true
+  colorize_states: true
 graph_span: 24h
 span:
   end: day
@@ -22,14 +24,30 @@ series:
       return today
         .filter(p => p.gross !== null)
         .map(p => [new Date(p.start).getTime(), p.gross]);
+  - entity: sensor.pstryk_consumption_today
+    type: line
+    name: Koszt narastająco
+    unit: PLN
+    curve: straight
+    stroke_width: 2
+    data_generator: |
+      const hourly = entity.attributes.hourly || [];
+      let sum = 0;
+      return hourly.map(h => {
+        sum += h.cost;
+        return [new Date(h.start).getTime(), Math.round(sum * 100) / 100];
+      });
 apex_config:
   chart:
     height: 300
   yaxis:
     - seriesName: Zużycie kWh
+      decimalsInFloat: 2
     - seriesName: Cena PLN/kWh
       opposite: true
       decimalsInFloat: 2
+    - seriesName: Koszt narastająco
+      decimalsInFloat: 1
   xaxis:
     type: datetime
     labels:
