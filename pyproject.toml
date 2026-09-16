@@ -1,0 +1,21 @@
+[project]
+name = "pstryk-ha-next"
+version = "0.1.0"
+description = "Pstryk Energy custom integration for Home Assistant (development workspace)"
+requires-python = ">=3.13"
+license = "MIT"
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "pytest-asyncio>=0.24",
+    "pytest-homeassistant-custom-component",
+    "pyyaml",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
