@@ -11,9 +11,10 @@ span:
 now:
   show: true
   label: Teraz
-  color: "#ff9800"
+  color: "#e53935"
 yaxis:
   - decimals: 2
+    min: 0
 series:
   - entity: sensor.pstryk_current_price
     type: column
@@ -21,7 +22,7 @@ series:
     float_precision: 2
     show:
       legend_value: false
-      in_header: raw
+      in_header: false
     data_generator: |
       const attrs = entity.attributes;
       const all = (attrs.today_prices || []).concat(attrs.tomorrow_prices || [])
@@ -33,10 +34,6 @@ apex_config:
   plotOptions:
     bar:
       columnWidth: 60%
-  xaxis:
-    type: datetime
-    labels:
-      datetimeUTC: false
   tooltip:
     x:
       format: d MMM HH:mm
@@ -45,3 +42,7 @@ apex_config:
         EVAL:function(value) {
           return value.toFixed(2);
         }
+  xaxis:
+    type: datetime
+    labels:
+      datetimeUTC: false

@@ -68,13 +68,33 @@ fixtures; never commit raw recordings.
 
 ## Dashboard cards
 
-`dashboards/*.yaml` are `custom:apexcharts-card` configs; `data_generator`
-JS reads the attribute contracts listed in `architecture.md`. Two JS traps
-already fixed — don't reintroduce:
+`dashboards/*.yaml` are `custom:apexcharts-card` 2.2.3 configs;
+`data_generator` JS reads the attribute contracts listed in
+`architecture.md`. Traps verified the hard way — check against the 2.2.3
+sources (README at tag + `src/types-config-ti.ts`), not the master README,
+and don't reintroduce:
+
+- Generator sandbox exposes **`entity`** only — use `entity.attributes`,
+  `entity.state`; bare `attributes`/`state` throw.
+- `in_header`, `legend_value`, `name_in_header` live **under the series
+  `show:` block** per the validator, despite the README listing them flat.
+- Card-level `yaxis.decimals` (default **1**) overrides
+  `apex_config.yaxis`; tooltip/header precision comes from series
+  `float_precision` (max digits — fixed trailing zeros need an
+  `EVAL:function` tooltip formatter via `apex_config`).
+- `now:` (current-time marker) is **card-level**, not per-series.
+- **Three series (column + 2 lines) collapse bars to 1px** in 2.2.3
+  regardless of `columnWidth` — keep mixed charts at column + one line.
+- An `in_chart: false` series **still contributes to axis scaling** —
+  header-only values need a real side entity card instead.
+- Different units sharing an axis stretch it invisibly (a 2.2 PLN/kWh price
+  spike on a kWh axis); give each unit its own axis, and set `min: 0`
+  explicitly when a line series would auto-snap the floor above zero.
 - `new Date("YYYY-MM-DD")` parses as **UTC midnight** (ECMAScript date-only
   rule) → append `T00:00:00` for local midnight.
 - `span: end: day` windows end today; a series whose endpoint is
   end-of-month needs `span: start: month` or it renders clipped.
+- `chart.zoom` does not work on touch devices — left disabled.
 
 ## Release / HACS
 

@@ -2,19 +2,23 @@ type: custom:apexcharts-card
 header:
   title: Pstryk — cena vs zużycie (dziś)
   show: true
-  show_states: true
-  colorize_states: true
 graph_span: 24h
 span:
   end: day
 yaxis:
   - id: kwh
     decimals: 2
+    min: 0
+    apex_config:
+      title:
+        text: Zużycie (kWh)
   - id: cena
     decimals: 2
+    min: 0
     opposite: true
-  - id: koszt
-    decimals: 1
+    apex_config:
+      title:
+        text: Cena (PLN/kWh)
 series:
   - entity: sensor.pstryk_consumption_today
     type: column
@@ -23,7 +27,7 @@ series:
     unit: kWh
     yaxis_id: kwh
     show:
-      in_header: raw
+      legend_value: false
     data_generator: |
       const hourly = entity.attributes.hourly || [];
       return hourly.map(h => [new Date(h.start).getTime(), h.kwh]);
@@ -33,39 +37,21 @@ series:
     float_precision: 2
     yaxis_id: cena
     show:
-      in_header: raw
+      legend_value: false
     curve: stepline
     data_generator: |
       const today = entity.attributes.today_prices || [];
       return today
         .filter(p => p.gross !== null)
         .map(p => [new Date(p.start).getTime(), p.gross]);
-  - entity: sensor.pstryk_consumption_today
-    type: line
-    name: Koszt narastająco
-    float_precision: 1
-    unit: PLN
-    yaxis_id: koszt
-    show:
-      in_header: false
-    curve: straight
-    stroke_width: 2
-    data_generator: |
-      const hourly = entity.attributes.hourly || [];
-      let sum = 0;
-      const pts = hourly.map(h => {
-        sum += h.cost;
-        return [new Date(h.start).getTime(), Math.round(sum * 100) / 100];
-      });
-      if (pts.length) {
-        const eod = new Date();
-        eod.setHours(23, 59, 59, 999);
-        pts.push([eod.getTime(), pts[pts.length - 1][1]]);
-      }
-      return pts;
 apex_config:
   chart:
     height: 300
+  legend:
+    show: false
+  plotOptions:
+    bar:
+      columnWidth: 60%
   tooltip:
     y:
       formatter: |

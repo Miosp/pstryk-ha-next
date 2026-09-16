@@ -8,9 +8,15 @@ span:
 yaxis:
   - id: dzien
     decimals: 1
+    apex_config:
+      title:
+        text: Koszt dnia (PLN)
   - id: narastajaco
     decimals: 0
     opposite: true
+    apex_config:
+      title:
+        text: Narastająco (PLN)
 series:
   - entity: sensor.pstryk_cost_month
     type: column
