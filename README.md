@@ -85,7 +85,7 @@ Katalog [`dashboards/`](dashboards/) zawiera trzy gotowe karty [ApexCharts](http
 
 Jak używać:
 
-1. Zainstaluj wtyczkę interfejsu apexcharts-card przez HACS (kategoria Dashboard). Karty wymagają wersji **2.3 lub nowszej**.
+1. Zainstaluj wtyczkę interfejsu apexcharts-card przez HACS (kategoria Dashboard).
 2. Otwórz panel → Edytuj panel → Dodaj kartę Ręcznie (lub dodaj do stosu pionowego) i wklej kod YAML z pliku.
 3. Jeśli w Twojej instalacji zmieniono nazwy encji, dostosuj linie `entity:`.
 

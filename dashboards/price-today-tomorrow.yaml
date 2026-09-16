@@ -19,8 +19,6 @@ series:
     type: column
     name: Cena
     in_header: before_now
-    tap_action:
-      action: more-info
     show:
       legend_value: false
     data_generator: |
