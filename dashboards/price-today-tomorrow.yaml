@@ -14,7 +14,9 @@ series:
     name: Cena
     unit: PLN/kWh
     data_generator: |
-      return attributes.today_prices.concat(attributes.tomorrow_prices)
+      const today = attributes.today_prices || [];
+      const tomorrow = attributes.tomorrow_prices || [];
+      return today.concat(tomorrow)
         .filter(p => p.gross !== null)
         .map(p => [new Date(p.start).getTime(), p.gross]);
 apex_config:
