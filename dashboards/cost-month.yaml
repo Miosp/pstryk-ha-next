@@ -13,7 +13,7 @@ series:
     name: Koszt dnia
     unit: PLN
     data_generator: |
-      const daily = attributes.daily || [];
+      const daily = entity.attributes.daily || [];
       return daily.map(d => [new Date(d.start + "T00:00:00").getTime(), d.cost]);
   - entity: sensor.pstryk_cost_month
     type: line
@@ -22,7 +22,7 @@ series:
     extend_to: end
     data_generator: |
       const now = new Date().getTime();
-      const forecast = attributes.forecast;
+      const forecast = entity.attributes.forecast;
       if (forecast === undefined || forecast === null) return [];
       const endOfMonth = new Date(); endOfMonth.setMonth(endOfMonth.getMonth() + 1, 0);
       endOfMonth.setHours(23, 59, 59, 999);

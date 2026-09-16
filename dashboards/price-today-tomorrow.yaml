@@ -14,8 +14,9 @@ series:
     name: Cena
     unit: PLN/kWh
     data_generator: |
-      const today = attributes.today_prices || [];
-      const tomorrow = attributes.tomorrow_prices || [];
+      const attrs = entity.attributes;
+      const today = attrs.today_prices || [];
+      const tomorrow = attrs.tomorrow_prices || [];
       return today.concat(tomorrow)
         .filter(p => p.gross !== null)
         .map(p => [new Date(p.start).getTime(), p.gross]);

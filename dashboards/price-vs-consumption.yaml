@@ -11,14 +11,14 @@ series:
     name: Zużycie kWh
     unit: kWh
     data_generator: |
-      const hourly = attributes.hourly || [];
+      const hourly = entity.attributes.hourly || [];
       return hourly.map(h => [new Date(h.start).getTime(), h.kwh]);
   - entity: sensor.pstryk_current_price
     type: line
     name: Cena PLN/kWh
     curve: stepline
     data_generator: |
-      const today = attributes.today_prices || [];
+      const today = entity.attributes.today_prices || [];
       return today
         .filter(p => p.gross !== null)
         .map(p => [new Date(p.start).getTime(), p.gross]);
