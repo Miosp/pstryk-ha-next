@@ -12,33 +12,20 @@ series:
     name: Cena
     show:
       legend_value: false
+    now:
+      show: true
+      label: Teraz
     data_generator: |
       const attrs = entity.attributes;
       const all = (attrs.today_prices || []).concat(attrs.tomorrow_prices || [])
         .filter(p => p.gross !== null);
       return all.map(p => [new Date(p.start).getTime(), p.gross]);
-  - entity: sensor.pstryk_current_price
-    type: column
-    name: Teraz
-    color: "#ff9800"
-    show:
-      legend_value: false
-    data_generator: |
-      const attrs = entity.attributes;
-      const all = (attrs.today_prices || []).concat(attrs.tomorrow_prices || [])
-        .filter(p => p.gross !== null);
-      const now = Date.now();
-      const cur = all.find(p => {
-        const t = new Date(p.start).getTime();
-        return t <= now && t + 3600000 > now;
-      });
-      return cur ? [[new Date(cur.start).getTime(), cur.gross]] : [];
 apex_config:
   chart:
     height: 300
   plotOptions:
     bar:
-      columnWidth: 90%
+      columnWidth: 60%
   yaxis:
     - decimalsInFloat: 2
   xaxis:
