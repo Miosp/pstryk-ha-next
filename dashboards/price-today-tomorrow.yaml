@@ -16,39 +16,11 @@ series:
       const attrs = entity.attributes;
       const all = (attrs.today_prices || []).concat(attrs.tomorrow_prices || [])
         .filter(p => p.gross !== null);
-      return all.filter(p => !p.is_cheap && !p.is_expensive)
-        .map(p => [new Date(p.start).getTime(), p.gross]);
+      return all.map(p => [new Date(p.start).getTime(), p.gross]);
   - entity: sensor.pstryk_current_price
     type: column
-    name: Tanie godziny
-    color: "#4caf50"
-    show:
-      legend_value: false
-    data_generator: |
-      const attrs = entity.attributes;
-      const all = (attrs.today_prices || []).concat(attrs.tomorrow_prices || [])
-        .filter(p => p.gross !== null);
-      return all.filter(p => p.is_cheap && !p.is_expensive)
-        .map(p => [new Date(p.start).getTime(), p.gross]);
-  - entity: sensor.pstryk_current_price
-    type: column
-    name: Drogie godziny
-    color: "#f44336"
-    show:
-      legend_value: false
-    data_generator: |
-      const attrs = entity.attributes;
-      const all = (attrs.today_prices || []).concat(attrs.tomorrow_prices || [])
-        .filter(p => p.gross !== null);
-      return all.filter(p => p.is_expensive)
-        .map(p => [new Date(p.start).getTime(), p.gross]);
-  - entity: sensor.pstryk_current_price
-    type: line
     name: Teraz
     color: "#ff9800"
-    stroke_width: 4
-    opacity: 0.9
-    extend_to: false
     show:
       legend_value: false
     data_generator: |
@@ -60,20 +32,13 @@ series:
         const t = new Date(p.start).getTime();
         return t <= now && t + 3600000 > now;
       });
-      if (!cur) return [];
-      const t = new Date(cur.start).getTime();
-      return [[t, cur.gross], [t + 3599999, cur.gross]];
+      return cur ? [[new Date(cur.start).getTime(), cur.gross]] : [];
 apex_config:
   chart:
     height: 300
-    stacked: true
-  markers:
-    size: 0
-  stroke:
-    curve: straight
   plotOptions:
     bar:
-      columnWidth: 60%
+      columnWidth: 90%
   yaxis:
     - decimalsInFloat: 2
   xaxis:
