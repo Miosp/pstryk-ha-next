@@ -23,10 +23,11 @@ series:
     data_generator: |
       const now = new Date().getTime();
       const forecast = entity.attributes.forecast;
-      if (forecast === undefined || forecast === null) return [];
+      const current = parseFloat(entity.state);
+      if (!isFinite(current) || forecast === undefined || forecast === null) return [];
       const endOfMonth = new Date(); endOfMonth.setMonth(endOfMonth.getMonth() + 1, 0);
       endOfMonth.setHours(23, 59, 59, 999);
-      return [[now, state], [endOfMonth.getTime(), forecast]];
+      return [[now, current], [endOfMonth.getTime(), forecast]];
 apex_config:
   chart:
     height: 300
