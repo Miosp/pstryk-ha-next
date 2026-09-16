@@ -6,15 +6,15 @@ graph_span: 48h
 span:
   end: day
   offset: "+24h"
+now:
+  show: true
+  label: Teraz
 series:
   - entity: sensor.pstryk_current_price
     type: column
     name: Cena
     show:
       legend_value: false
-    now:
-      show: true
-      label: Teraz
     data_generator: |
       const attrs = entity.attributes;
       const all = (attrs.today_prices || []).concat(attrs.tomorrow_prices || [])

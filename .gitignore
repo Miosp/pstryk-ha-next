@@ -6,3 +6,5 @@ venv/
 .idea/
 .vscode/
 .superpowers/
+*.swp
+*.swo
