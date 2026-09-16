@@ -7,7 +7,7 @@ header:
 graph_span: 48h
 span:
   end: day
-  offset: 24h
+  offset: "+24h"
 series:
   - entity: sensor.pstryk_current_price
     type: column
