@@ -21,8 +21,6 @@ series:
     name: Zużycie kWh
     unit: kWh
     yaxis_id: kwh
-    tap_action:
-      action: more-info
     data_generator: |
       const hourly = entity.attributes.hourly || [];
       return hourly.map(h => [new Date(h.start).getTime(), h.kwh]);
