@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "data": {
+          "api_key": "Klucz API (aplikacja Pstryk → Integracje)"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Ponowne uwierzytelnienie Pstryk Energy",
+        "description": "Zapisany klucz API utracił ważność. Wprowadź nowy klucz API z aplikacji Pstryk (Integracje).",
+        "data": {
+          "api_key": "Nowy klucz API"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Nieprawidłowy klucz API lub brak podłączonego licznika",
+      "rate_limited": "Limit zapytań API Pstryk, spróbuj za chwilę",
+      "cannot_connect": "Nie można połączyć się z API Pstryk",
+      "unknown": "Nieoczekiwany błąd, sprawdź logi"
+    },
+    "abort": {
+      "reauth_successful": "Ponowne uwierzytelnienie powiodło się",
+      "already_configured": "Ten klucz API jest już skonfigurowany."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "window_hours": "Długość najtańszego okna (godziny)",
+          "price_basis": "Podstawa ceny",
+          "poll_minutes": "Interwał odpytywania (minuty)"
+        }
+      }
+    }
+  }
+}

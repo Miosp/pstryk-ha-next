@@ -1,0 +1,12 @@
+{
+  "domain": "pstryk_energy",
+  "name": "Pstryk Energy",
+  "codeowners": ["@miosp"],
+  "config_flow": true,
+  "diagnostics": true,
+  "documentation": "https://github.com/miosp/pstryk-ha-next",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/miosp/pstryk-ha-next/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

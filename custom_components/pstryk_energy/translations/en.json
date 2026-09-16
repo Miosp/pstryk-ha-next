@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "data": {
+          "api_key": "API key (Pstryk app → Integrations)"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reauthenticate Pstryk Energy",
+        "description": "The stored API key is no longer valid. Enter a new API key from the Pstryk app (Integrations).",
+        "data": {
+          "api_key": "New API key"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid API key or no meter connected",
+      "rate_limited": "Pstryk API rate limited, try again in a minute",
+      "cannot_connect": "Cannot connect to the Pstryk API",
+      "unknown": "Unexpected error, check logs"
+    },
+    "abort": {
+      "reauth_successful": "Re-authentication was successful",
+      "already_configured": "This API key is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "window_hours": "Cheapest-window length (hours)",
+          "price_basis": "Price basis",
+          "poll_minutes": "Usage poll interval (minutes)"
+        }
+      }
+    }
+  }
+}
