@@ -46,7 +46,9 @@ series:
     type: line
     name: Teraz
     color: "#ff9800"
-    stroke_width: 0
+    stroke_width: 4
+    opacity: 0.9
+    extend_to: false
     show:
       legend_value: false
     data_generator: |
@@ -58,13 +60,17 @@ series:
         const t = new Date(p.start).getTime();
         return t <= now && t + 3600000 > now;
       });
-      return cur ? [[new Date(cur.start).getTime(), cur.gross]] : [];
+      if (!cur) return [];
+      const t = new Date(cur.start).getTime();
+      return [[t, cur.gross], [t + 3599999, cur.gross]];
 apex_config:
   chart:
     height: 300
     stacked: true
   markers:
-    size: 8
+    size: 0
+  stroke:
+    curve: straight
   plotOptions:
     bar:
       columnWidth: 60%
