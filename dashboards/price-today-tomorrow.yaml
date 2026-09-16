@@ -2,8 +2,6 @@ type: custom:apexcharts-card
 header:
   title: Pstryk — ceny 48h (PLN/kWh brutto)
   show: true
-  show_states: true
-  colorize_states: true
 graph_span: 48h
 span:
   end: day
@@ -12,20 +10,55 @@ series:
   - entity: sensor.pstryk_current_price
     type: column
     name: Cena
-    unit: PLN/kWh
     data_generator: |
       const attrs = entity.attributes;
-      const today = attrs.today_prices || [];
-      const tomorrow = attrs.tomorrow_prices || [];
-      return today.concat(tomorrow)
-        .filter(p => p.gross !== null)
+      const all = (attrs.today_prices || []).concat(attrs.tomorrow_prices || [])
+        .filter(p => p.gross !== null);
+      return all.filter(p => !p.is_cheap && !p.is_expensive)
         .map(p => [new Date(p.start).getTime(), p.gross]);
+  - entity: sensor.pstryk_current_price
+    type: column
+    name: Tanie godziny
+    color: "#4caf50"
+    data_generator: |
+      const attrs = entity.attributes;
+      const all = (attrs.today_prices || []).concat(attrs.tomorrow_prices || [])
+        .filter(p => p.gross !== null);
+      return all.filter(p => p.is_cheap && !p.is_expensive)
+        .map(p => [new Date(p.start).getTime(), p.gross]);
+  - entity: sensor.pstryk_current_price
+    type: column
+    name: Drogie godziny
+    color: "#f44336"
+    data_generator: |
+      const attrs = entity.attributes;
+      const all = (attrs.today_prices || []).concat(attrs.tomorrow_prices || [])
+        .filter(p => p.gross !== null);
+      return all.filter(p => p.is_expensive)
+        .map(p => [new Date(p.start).getTime(), p.gross]);
+  - entity: sensor.pstryk_current_price
+    type: column
+    name: Teraz
+    color: "#ff9800"
+    opacity: 0.35
+    data_generator: |
+      const attrs = entity.attributes;
+      const all = (attrs.today_prices || []).concat(attrs.tomorrow_prices || [])
+        .filter(p => p.gross !== null);
+      const now = Date.now();
+      const cur = all.find(p => {
+        const t = new Date(p.start).getTime();
+        return t <= now && t + 3600000 > now;
+      });
+      return cur ? [[new Date(cur.start).getTime(), cur.gross]] : [];
 apex_config:
   chart:
     height: 300
   plotOptions:
     bar:
       columnWidth: 60%
+  yaxis:
+    - decimalsInFloat: 2
   xaxis:
     type: datetime
     labels:

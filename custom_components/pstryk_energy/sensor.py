@@ -99,7 +99,7 @@ class PstrykPriceSensor(PstrykEntityBase, SensorEntity):
 
     _attr_device_class = SensorDeviceClass.MONETARY
     _attr_native_unit_of_measurement = "PLN/kWh"
-    _attr_suggested_display_precision = 4
+    _attr_suggested_display_precision = 2
     _attr_name = "Current price"
 
     def __init__(self, coordinator: PricingDataCoordinator, entry: ConfigEntry) -> None:
@@ -151,7 +151,7 @@ class PstrykNextHourPriceSensor(PstrykEntityBase, SensorEntity):
 
     _attr_device_class = SensorDeviceClass.MONETARY
     _attr_native_unit_of_measurement = "PLN/kWh"
-    _attr_suggested_display_precision = 4
+    _attr_suggested_display_precision = 2
     _attr_name = "Next hour price"
 
     def __init__(self, coordinator: PricingDataCoordinator, entry: ConfigEntry) -> None:
@@ -247,7 +247,7 @@ class PstrykAvgPriceSensor(PstrykEntityBase, SensorEntity):
 
     _attr_device_class = SensorDeviceClass.MONETARY
     _attr_native_unit_of_measurement = "PLN/kWh"
-    _attr_suggested_display_precision = 4
+    _attr_suggested_display_precision = 2
 
     def __init__(
         self, coordinator: PricingDataCoordinator, entry: ConfigEntry, day_offset: int
@@ -314,7 +314,7 @@ class PstrykCheapestWindowSensor(PstrykEntityBase, SensorEntity):
 
     _attr_device_class = SensorDeviceClass.MONETARY
     _attr_native_unit_of_measurement = "PLN/kWh"
-    _attr_suggested_display_precision = 4
+    _attr_suggested_display_precision = 2
     _attr_name = "Cheapest window"
 
     def __init__(self, coordinator: PricingDataCoordinator, entry: ConfigEntry) -> None:
